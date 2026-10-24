@@ -443,13 +443,13 @@
       let aboutTimer;
 
       async function initAboutSlideshow() {
-  aboutSlides = await loadSlides(
-    ABOUT_FOLDER,
-    aboutSlideshow,
-    "Hudly studio"
-  );
-
-  // If no numbered slides exist, use the original studio photo.
+        aboutSlides = await loadSlides(
+          ABOUT_FOLDER,
+          aboutSlideshow,
+          "Hudly studio"
+          );
+  
+          
   if (!aboutSlides.length) {
     const fallbackImage = ABOUT_FOLDER + "hudlystudio.jpg";
 
