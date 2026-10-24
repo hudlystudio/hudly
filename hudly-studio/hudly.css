@@ -137,7 +137,7 @@ body.is-about .media { top: 4px; left: 4px; bottom: 4px; right: 43vw; border-rad
 .media__about img, .media__about video { width: 100%; height: 100%; object-fit: contain; }
 body.is-about .media__about { opacity: 1; }
 .slide { position: absolute; inset: 0; opacity: 0; transition: opacity .7s var(--ease); }
-.slide.on { opacity: 1 !important; visibility: visible !important; display: block !important; }
+.slide.on { opacity: 1; }
 .media__about .slide:not(.on) { transition: none; }
 .media__about .slide.prev { opacity: 1; z-index: 0; }
 .media__about .slide.on { z-index: 1; }

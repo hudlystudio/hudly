@@ -421,14 +421,21 @@
 
       async function initHomeSlideshow() {
         homeSlides = await loadSlides(
-          SLIDE_FOLDER,
-          media,
-          "Selected work"
+           SLIDE_FOLDER,
+           media,
+           "Selected work"
         );
+        
+        console.log("Home slideshow slides loaded:", homeSlides.length);
+        console.log("Home slideshow container:", media);
+        console.log("Home slideshow dimensions:", media.getBoundingClientRect());
 
-        if (homeSlides.length && !reducedMotion) {
+        if (homeSlides.length) {
           showHomeSlide(0);
-          updateSlideshow();
+          
+          if (!reducedMotion) {
+            updateSlideshow();
+          }
         }
       }
 
