@@ -15,7 +15,6 @@
   >
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <link rel="stylesheet" href="hudly.css">
@@ -432,10 +431,7 @@
 
         if (homeSlides.length) {
           showHomeSlide(0);
-          
-          if (!reducedMotion) {
-            updateSlideshow();
-          }
+          updateSlideshow();
         }
       }
 
@@ -499,7 +495,7 @@
         clearInterval(homeTimer);
         clearInterval(aboutTimer);
 
-        if (document.hidden || reducedMotion) return;
+        if (document.hidden) return;
 
         if (location.hash === "#about") {
           aboutTimer = setInterval(() => {
