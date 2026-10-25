@@ -202,7 +202,7 @@ body.is-about .media__about { opacity: 1; }
   }
 
   body { overflow: hidden; }
-  .media { top: 4px; left: 4px; right: 4px; bottom: 30vh; border-radius: 4px; }
+  .media { top: 4px; left: 4px; right: 4px; bottom: 18vh; border-radius: 4px; }
   body.is-about .media {top: 4px;left: 4px; right: 4px; height: 52vh; border-radius: 4px; }
   .home-panel { background: transparent; top: auto; left: 10px; right: 10px; bottom: 0; width: auto; height: 28vh; padding: 0 0 20px; }
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
