@@ -36,14 +36,14 @@ h1 {
 h2 {
   font-family: var(--font);
   font-weight: 400;
-  font-size: clamp(20px, 1.05vw, 22px); 
+  font-size: clamp(19px, 1.05vw, 20px); 
   letter-spacing: -0.1px;
   line-height: 1.2;
 }
 h3 {
   font-family: var(--font);
   font-weight: 500; 
-  font-size: clamp(16px, 2.5vw, 16px); 
+  font-size: clamp(16px, 0.85vw, 16px); 
   line-height: 1.25;
 }
 
