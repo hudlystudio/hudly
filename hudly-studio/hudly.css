@@ -202,7 +202,7 @@ body.is-about .media__about { opacity: 1; }
   }
 
   body { overflow: hidden; }
-  .media { top: 4px; left: 4px; right: 4px; bottom: 18vh; border-radius: 4px; }
+  .media { top: 4px; left: 4px; right: 4px; bottom: 20vh; border-radius: 4px; }
   body.is-about .media {top: 4px;left: 4px; right: 4px; height: 52vh; border-radius: 4px; }
   .home-panel { background: transparent; top: auto; left: 10px; right: 10px; bottom: 0; width: auto; height: 28vh; padding: 0 0 20px; }
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
@@ -215,13 +215,10 @@ body.is-about .media__about { opacity: 1; }
   .about-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; } 
 
   .about-logo { position: fixed; width: 48px; top: 20px; }
-  .about-description { position: relative; width: 100%; max-width: none; margin: 40px 0; padding: 0; top: 40px; left: 0px; right: 24px;  white-space: normal;}
+  .about-description { position: relative; width: 100%; max-width: none; margin: 60px 0; padding: 0; top: 40px; left: 0px; right: 24px;  white-space: normal;}
   .about-details { position: static; width: 100%; margin-top: 40px; gap: 8px; }
   .detail-row { grid-template-columns: minmax(80px, 25%) minmax(0, 1fr); column-gap: 16px; width: 100%; padding-bottom: 8px;}
   .detail-row p { max-width: none; }
-}
-@media (max-width: 390px) {
-  .about-description { left: 0; font-size: 16px; }
 }
 
 .intro__line { opacity: 0; animation: taglineFade 1s ease forwards; animation-delay: 0.5s; }
