@@ -4,29 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hudly — Brand, Strategy & Design</title>
+  <title>Hudly — Brand, Web Development & Design</title>
 
   <meta
     name="description"
-    content="Hudly is a design, strategy and web development practice based in Toronto. 
+    content="Hudly is an independent design, strategy and web development practice based in Toronto. 
     We create singular, distinctive brand and digital experiences that help businesses 
     and organizations stand apart, strengthen their presence and intentionally evolve their norms."
   >
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
   <link rel="stylesheet" href="hudly.css">
-  
-  <!-- GT -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YH9BF217S1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-YH9BF217S1');
-</script>
+  <script src="//www.ip-approval.com/1/3/3518/2/ip-checker-js" referrerpolicy="no-referrer-when-downgrade"></script>
+  <!-- GT -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH9BF217S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YH9BF217S1');
+  </script>
 </head>
 
 <body>
@@ -38,7 +37,7 @@
     </div>
 
     <p class="intro__line">
-      Brand, Interactive & Strategy
+      Brand, Interactive & Design
     </p>
   </div>
 
@@ -69,7 +68,7 @@
         </h2>
         <p class="email">
           <a href="mailto:info@hudly.ca">info@hudly.ca</a>
-          <btn-sm type="button" class="copy-email" id="copyEmail">
+          <btn-sm type="button" class="btn-sm" id="copyEmail">
             Copy
           </btn-sm>
         </p>
@@ -90,7 +89,6 @@
       Hudly is an independent design, strategy and web development practice based in Toronto. 
       We create singular, distinctive identities and digital experiences that help businesses 
       and organizations express who they are, strengthen their presence and evolve with intention.
-      <br>
     </h1>
 
     <div class="about-details">
@@ -104,12 +102,11 @@
         <p> 
           We work with brands, businesses and organizations on projects of every scale,
           helping them differentiate, communicate clearly, and create experiences that 
-          resonate with the people they serve. 
-          <br><br>
-          We believe people remember brands that are 
-          build on trust, shaped by distinction and grounded in a clear sense of identity. 
-          We ask questions, think critically about human experiences, approach challenges 
-          from different angles and develop solutions with people at their core.
+          resonate with the people they serve. <br>
+          <br>
+          We believe people remember brands that are build on trust, shaped by distinction 
+          and grounded in a clear sense of identity. We ask questions, think critically about 
+          human experiences, approach challenges from different angles and develop solutions with people at their core.
           <br><br>
         </p>
       </div>
@@ -122,10 +119,10 @@
           Website<br>
           Digital Products<br>
           UI/UX Design<br>
+          Motion Graphics<br>
           Graphic Design<br>
           Editorial &amp; Publishing<br>
           Campaigns<br>
-          Motion Graphics<br>
           Illustration
         </p>
       </div>
@@ -141,9 +138,154 @@
   </section>
 </main>
 
-  <div class="mbar" aria-hidden="true"><div class="mbar__logo"><img src="assets/hudly-logo.svg" alt="hudly"></div><span></span></div>
-  <nav-btn class="nav-btn" id="navBtn" type="button" aria-label="Open about"><span class="nav-label" id="navLabel"><span class="nl nl--probe" aria-hidden="true">About</span><span class="nl nl--about" aria-hidden="false">About</span><span class="nl nl--home" aria-hidden="true">×</span></span></nav-btn>
 
+<!-- Contact -->
+<main class="view can-scroll" id="contact">
+  <div class="media media__contact" id="contactSlideshow"></div>
+  <section class="contact-panel">
+    <img
+      class="about-logo"
+      src="assets/hudly-logo.svg"
+      alt="Hudly Studio Logo"
+    >
+
+    <div class="contact-content">
+      <h2 class="contact-heading">Contact</h2>
+
+      <p class="contact-intro">Get in touch using the form below.</p>
+
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formspree.io/f/mzeeezqn"
+        method="POST"
+      >
+        <div class="contact-field">
+          <h3 for="contactName" class="contact-row">Name</h3>
+          <input
+            id="contactName"
+            name="name"
+            type="text"
+            placeholder="Name"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="contact-field">
+          <h3 for="contactEmail" class="contact-row">Email</h3>
+          <input
+            id="contactEmail"
+            name="email"
+            type="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <fieldset class="contact-field">
+          <h3 class="contact-heading" style="font-weight: 400;">Message</h3>
+
+          <div class="contact-selection">
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Brand">
+              <span>Brand</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Website">
+              <span>Web</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Product">
+              <span>Digital Product</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Design">
+              <span>Design</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="e-commerce">
+              <span>e-commerce</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Campaign">
+              <span>Campaign</span>
+            </label>
+
+            <label class="contact-option">
+              <input type="checkbox" name="services[]" value="Other">
+              <span>Other</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="contact-field">
+          <h3 for="contactMessage" class="contact-row">Message</h3>
+          <textarea
+            id="contactMessage"
+            name="message"
+            placeholder=" "
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <button class="contact-submit" type="submit">
+          Send <span aria-hidden="true"></span>
+        </button>
+
+        <p
+          class="contact-status"
+          id="contactStatus"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+      <div data-fs-success>
+        <h2>Thank you for reaching out.</h2>
+        <p>We'll be in touch soon.</p>
+      </div>
+      
+      <div data-fs-error role="alert"></div>
+    </div>
+
+    <p class="about-copyright">© Hudly Studio 2026</p>
+  </section>
+</main>
+
+
+
+<div class="mbar" aria-hidden="true">
+  <div class="mbar__logo">
+    <img src="assets/hudly-logo.svg" alt="Hudly">
+  </div>
+  <span></span>
+</div>
+
+<nav class="top-nav" aria-label="Main navigation">
+  <button
+    class="nav-btn"
+    id="navBtn"
+    type="button"
+    aria-label="Open About"
+  >
+    <span class="nav-label" id="navLabel">
+      <span class="nl nl--probe" aria-hidden="true">About</span>
+      <span class="nl nl--about" aria-hidden="false">About</span>
+      <span class="nl nl--home" aria-hidden="true">×</span>
+    </span>
+  </button>
+
+  <button class="contact-nav" id="contactBtn" type="button">
+    Contact
+  </button>
+</nav>  
 
 
 
@@ -156,6 +298,7 @@
 
       const SLIDE_FOLDER = "assets/slideshow/";
       const ABOUT_FOLDER = "assets/about/";
+      const CONTACT_FOLDER = "assets/contact/";
 
       const IMAGE_TYPES = ["jpg", "jpeg", "png", "webp", "avif"];
       const VIDEO_TYPES = ["mp4", "webm"];
@@ -174,6 +317,7 @@
       const intro = document.getElementById("intro");
       const media = document.getElementById("slideshow");
       const aboutSlideshow = document.getElementById("aboutSlideshow");
+      const contactSlideshow = document.getElementById("contactSlideshow");
       const home = document.getElementById("home");
       const about = document.getElementById("about");
       const navBtn = document.getElementById("navBtn");
@@ -187,29 +331,39 @@
 
       /* View navigation */
 
+      const contact = document.getElementById("contact");
+      const contactBtn = document.getElementById("contactBtn");
+
       function route() {
-        const isAbout = location.hash === "#about";
+        const view = location.hash.slice(1);
+        const isAbout = view === "about";
+        const isContact = view === "contact";
 
         body.classList.toggle("is-about", isAbout);
-        home.classList.toggle("active", !isAbout);
-        about.classList.toggle("active", isAbout);
+        body.classList.toggle("is-contact", isContact);
 
-        navLabel.classList.toggle("is-home", isAbout);
+        home.classList.toggle("active", !isAbout && !isContact);
+        about.classList.toggle("active", isAbout);
+        contact.classList.toggle("active", isContact);
+
+        navLabel.classList.toggle("is-home", isAbout || isContact);
 
         navBtn.setAttribute(
           "aria-label",
-          isAbout ? "Return to Home" : "Open About"
+          isAbout || isContact ? "Return to Home" : "Open About"
         );
 
         document.title = isAbout
           ? "About — Hudly"
-          : "Hudly — Brand, Strategy & Design";
+          : isContact
+            ? "Contact — Hudly"
+            : "Hudly — Brand, Strategy & Design";
 
         updateSlideshow();
       }
 
-      function showAbout(open) {
-        const target = open ? "#about" : "";
+      function showView(view) {
+        const target = view ? "#" + view : "";
 
         if (location.hash === target) return;
 
@@ -226,19 +380,19 @@
       }
 
       navBtn.addEventListener("click", () => {
-        showAbout(location.hash !== "#about");
+        const currentView = location.hash.slice(1);
+        showView(currentView === "about" || currentView === "contact"
+          ? ""
+          : "about");
+      });
+
+      contactBtn.addEventListener("click", () => {
+        showView("contact");
       });
 
       window.addEventListener("hashchange", route);
       window.addEventListener("popstate", route);
 
-      window.addEventListener("keydown", event => {
-        if (!intro.classList.contains("done")) return;
-        if (event.metaKey || event.ctrlKey || event.altKey) return;
-
-        if (event.key === "ArrowLeft") showAbout(true);
-        if (event.key === "ArrowRight") showAbout(false);
-      });
 
 
       /* Intro sequence */
@@ -270,7 +424,9 @@
 
       intro.addEventListener("click", finishIntro);
 
-      if (location.hash === "#about" || reducedMotion) {
+      if (location.hash === "#about" || 
+          location.hash === "#contact"
+      ) {
         finishIntro();
       } else {
         playIntro();
@@ -438,25 +594,24 @@
           aboutSlideshow,
           "Hudly studio"
           );
-  
           
-  if (!aboutSlides.length) {
-    const fallbackImage = ABOUT_FOLDER + "hudlystudio.jpg";
+        if (!aboutSlides.length) {
+          const fallbackImage = ABOUT_FOLDER + "hudlystudio.jpg";
 
-    const slide = createSlide(
-      fallbackImage,
-      "Hudly studio",
-      null
-    );
+          const slide = createSlide(
+            fallbackImage,
+            "Hudly studio",
+            null
+          );
 
-    slide.classList.add("on");
-    aboutSlideshow.appendChild(slide);
-    aboutSlides = [slide];
-  }
+          slide.classList.add("on");
+          aboutSlideshow.appendChild(slide);
+          aboutSlides = [slide];
+        }
 
-  showAboutSlide(0);
-  updateSlideshow();
-}
+        showAboutSlide(0);
+        updateSlideshow();
+      }
 
       function showAboutSlide(nextIndex) {
         if (!aboutSlides.length) return;
@@ -479,11 +634,64 @@
       }
 
 
+      /* Contact slideshow */
+
+      let contactSlides = [];
+      let contactIndex = 0;
+      let contactTimer;
+
+      async function initContactSlideshow() {
+        contactSlides = await loadSlides(
+          CONTACT_FOLDER,
+          contactSlideshow,
+          "Hudly contact"
+        );
+
+        if (!contactSlides.length) {
+          const fallbackImage = CONTACT_FOLDER + "hudlycontact.jpg";
+
+          const slide = createSlide(
+            fallbackImage,
+            "Hudly contact",
+            null
+          );
+
+          slide.classList.add("on");
+          contactSlideshow.appendChild(slide);
+          contactSlides = [slide];
+        }
+
+        showContactSlide(0);
+        updateSlideshow();
+      }
+
+      function showContactSlide(nextIndex) {
+        if (!contactSlides.length) return;
+
+        contactIndex = (
+          nextIndex + contactSlides.length
+        ) % contactSlides.length;
+
+        contactSlides.forEach((slide, index) => {
+          slide.classList.toggle("on", index === contactIndex);
+          slide.classList.remove("prev");
+        });
+
+        const activeVideo = contactSlides[contactIndex].querySelector("video");
+
+        if (activeVideo) {
+          activeVideo.currentTime = 0;
+          activeVideo.play().catch(() => {});
+        }
+      }
+      
+
       /* Slideshow playback */
 
       function updateSlideshow() {
         clearInterval(homeTimer);
         clearInterval(aboutTimer);
+        clearInterval(contactTimer);
 
         if (document.hidden) return;
 
@@ -491,6 +699,12 @@
           aboutTimer = setInterval(() => {
             showAboutSlide(aboutIndex + 1);
           }, ABOUT_INTERVAL);
+
+        } else if (location.hash === "#contact") {
+          contactTimer = setInterval(() => {
+            showContactSlide(contactIndex + 1);
+          }, ABOUT_INTERVAL);
+
         } else {
           homeTimer = setInterval(() => {
             showHomeSlide(homeIndex + 1);
@@ -531,9 +745,35 @@
       route();
       initHomeSlideshow();
       initAboutSlideshow();
+      initContactSlideshow();
 
     })();
+
+
+      /* Contact Confirmation*/
+      window.formspree =
+      window.formspree ||
+      function () {
+        (formspree.q = formspree.q || []).push(arguments);
+      };
+
+    formspree("initForm", {
+      formElement: "#contactForm",
+      formId: "mzeeezqn",
+
+      renderSuccess: ({ form }) => {
+        const message = document.createElement("div");
+        message.className = "contact-success";
+        message.innerHTML = `
+          <p>Thank you for reaching out.</p>
+          <p>We'll be in touch soon.</p>
+        `;
+
+        form.replaceWith(message);
+      }
+    });
   </script>
 
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
