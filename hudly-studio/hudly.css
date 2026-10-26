@@ -161,8 +161,6 @@ body.is-about .media__about { opacity: 1; }
 .media__about .slide.on { z-index: 1; }
 .slide img, .slide video { width: 100%; height: 100%; object-fit: cover; }
 .slide-count { display: none; }
-body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
-
 
 
 /* Home */
@@ -208,7 +206,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 .media__contact { display: none; }
 body.is-contact .media__contact { display: block; right: 43vw; cursor: default; }
 .contact-panel { position: relative; z-index: 3; width: 43vw; min-height: 100%; margin-left: auto; padding: 16px 4vw 16px 48px; background: var(--white); display: flex; flex-direction: column; }
-.contact-content { width: 100%; margin: 180px 0 0 95px; max-width: calc(100% - 95px);}
+.contact-description { width: 100%; margin: 180px 0 0 95px; max-width: calc(100% - 95px);}
 .contact-heading { margin-top: 8px; margin-bottom: 8px; }
 .contact-intro { margin-bottom: 56px; color: var(--dark);}
 .contact-form { display: flex; flex-direction: column; gap: 24px; }
@@ -238,7 +236,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 .contact-status { color: var(--muted); }
 
 .contact-success { color: var(--ink); font: inherit; animation: contactFadeIn 0.5s ease both; }
-.contact-success p + p { margin-top: 12px; color: var(--ink); }
+.contact-success p + p { margin-top: 12px; color: var(--muted); }
 
 
 /* Navigation: close on About */
@@ -255,6 +253,11 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
 }
+
+@media (max-width: 767px) {
+  .intro { display: none !important; }
+}
+
 @media (max-width: 727px) {
   #about {
     background: transparent;
@@ -277,7 +280,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
    box-shadow: 0 56px 40px var(--muted, 0); transform: translateY(0); transition: box-shadow 0.4s ease, transform 0.4s ease; }
   .about-panel:hover { box-shadow: 0 16px 40px var(--muted, 0.25); transform: translateY(-8px); }
   .about-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; } 
-  .about-logo { position: fixed; width: 48px; top: 20px;}
+  .about-logo { position: fixed; width: 48px; top: 20px; }
   .about-description { position: relative; width: 100%; max-width: none; margin: 60px 0; padding: 0; top: 40px; left: 0px; right: 24px;  white-space: normal; padding-bottom: 16px; }
   .about-details { position: static; width: 100%; margin-top: 40px; gap: 8px; }
   .detail-row { grid-template-columns: minmax(60px, 20%) minmax(0, 1fr); column-gap: 8px; width: 100%; padding-bottom: 8px;}
@@ -285,10 +288,11 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 
   body.is-contact .media { right: 4px; height: 52vh; }
   .contact-panel { position: relative; isolation: isolate; background-color: var(--white); min-height: 46vh; width: 100%; margin: 54vh 0 0 0; padding: 16px 32px; border-radius: 20px 20px 0 0;
-    box-shadow: 0 56px 40px var(--muted, 0); transform: translateY(0); transition: box-shadow 0.4s ease, transform 0.4s ease; }
+    box-shadow: 0 56px 40px var(--muted, 0); transform: translateY(0); transition: box-shadow 0.4s ease, transform 0.4s ease; } 
   .contact-panel:hover { box-shadow: 0 16px 40px var(--muted, 0.25); transform: translateY(-8px); }
   .contact-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; }   
-  .contact-description { max-width: 100%; margin: 100px 0 0; }
+  .contact-description { max-width: 100%; margin: 80px 0 0; }
+  .contact-option span { display: block; padding: 8px 16px; }
   .contact-intro { margin-bottom: 32px; }
   .contact-form { gap: 24px;}
 }
