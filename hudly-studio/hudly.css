@@ -163,6 +163,8 @@ body.is-about .media__about { opacity: 1; }
 .slide-count { display: none; }
 body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 
+
+
 /* Home */
 #home { background: transparent; }
 .home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 20vw; padding: 0; margin: 0; background: var(--white);}
@@ -269,20 +271,24 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
   .email-copy { margin-top: 10px; }
   .nav-btn { top: 20px; right: 16px; font-size: 18px; }
+
   body.is-about .nav-btn { top: 22px; }
   .about-panel { position: relative; isolation: isolate; background-color: var(--white); min-height: 46vh; width: 100%; margin: 54vh 0 0 0; padding: 16px 32px; border-radius: 20px 20px 0 0;
    box-shadow: 0 56px 40px var(--muted, 0); transform: translateY(0); transition: box-shadow 0.4s ease, transform 0.4s ease; }
   .about-panel:hover { box-shadow: 0 16px 40px var(--muted, 0.25); transform: translateY(-8px); }
   .about-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; } 
-
-  .about-logo { position: fixed; width: 48px; top: 20px; }
+  .about-logo { position: fixed; width: 48px; top: 20px;}
   .about-description { position: relative; width: 100%; max-width: none; margin: 60px 0; padding: 0; top: 40px; left: 0px; right: 24px;  white-space: normal; padding-bottom: 16px; }
   .about-details { position: static; width: 100%; margin-top: 40px; gap: 8px; }
   .detail-row { grid-template-columns: minmax(60px, 20%) minmax(0, 1fr); column-gap: 8px; width: 100%; padding-bottom: 8px;}
   .detail-row p { max-width: none; }
+
   body.is-contact .media { right: 4px; height: 52vh; }
-  .contact-panel { width: 100%; min-height: 46vh; margin: 54vh 0 0; padding: 32px 24px; border-radius: 20px 20px 0 0; }
-  .contact-content { max-width: 100%; margin: 60px 0 0; }
+  .contact-panel { position: relative; isolation: isolate; background-color: var(--white); min-height: 46vh; width: 100%; margin: 54vh 0 0 0; padding: 16px 32px; border-radius: 20px 20px 0 0;
+    box-shadow: 0 56px 40px var(--muted, 0); transform: translateY(0); transition: box-shadow 0.4s ease, transform 0.4s ease; }
+  .contact-panel:hover { box-shadow: 0 16px 40px var(--muted, 0.25); transform: translateY(-8px); }
+  .contact-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; }   
+  .contact-description { max-width: 100%; margin: 100px 0 0; }
   .contact-intro { margin-bottom: 32px; }
   .contact-form { gap: 24px;}
 }
