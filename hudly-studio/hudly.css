@@ -88,20 +88,27 @@ a:hover {
   font-size: 17px;
   line-height: 1.2;
   text-align: right;
-  cursor: pointer;
+  cursor: default;
   transition: color 0.3s ease;
 }
 .nav-btn:hover, .contact-nav:hover { color: var(--pink); }
 body.is-contact .contact-nav { display: none; }
 
-button { color: inherit; border: 0; background: none; font: inherit; cursor: pointer; }
-.btn-lg { 
-  color: inherit; 
-  border: 0; 
+button { color: inherit; border: 0; background: none; font: inherit; }
+.btn-primary { 
   background: none; 
-  cursor: pointer;
+  border: 1px solid var(--dark); 
+  border-radius: 32px; 
+  color: var(--dark); 
+  padding: 9px 16px 5px 16px; 
+  font-size: 15px; 
+  line-height: 1.1; 
+  transition: all 0.3s ease; 
+  cursor: default;
 }
-.btn-sm { 
+.btn-primary:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
+
+.btn-tertiary { 
   background: none; 
   border: 1px solid var(--dark); 
   border-radius: 20px; 
@@ -114,7 +121,7 @@ button { color: inherit; border: 0; background: none; font: inherit; cursor: poi
   transition: all 0.3s ease; 
   cursor: pointer;
 }
-.btn-sm:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
+.btn-tertiary:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
 
 
 
@@ -166,7 +173,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 
 /* Home */
 #home { background: transparent; }
-.home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 20vw; padding: 0; margin: 0; background: var(--white);}
+.home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 20.5vw; padding: 0; margin: 0; background: var(--white);}
 .about { position: absolute; left: 0; right: 1vw; bottom: 1.5vh; max-width: 28ch;}
 .about em { font-family: Georgia, serif; font-weight: 400; }
 .email { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 24px; color: var(--ink); }
@@ -183,7 +190,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
   margin-bottom: 0;
 }
 #about::-webkit-scrollbar {display: none;}
-.about-panel { position: relative; z-index: 3; background-color: var(--white); width: 43vw; height: auto; min-height: 100vh; padding: 16px 4vw 16px 48px; top: 0; right: 0; bottom: 0; margin-left: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+.about-panel { position: relative; z-index: 3; background-color: var(--white); width: 43vw; height: auto; min-height: 100vh; padding: 16px 4vw 0 40px; top: 0; right: 0; bottom: 0; margin-left: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
 .about-logo { position: fixed; width: 48px; height: auto; flex: 0 0 auto; object-fit: contain; } 
 .about-description { position: relative; max-width: 100%; margin: 200px 0 0 95px; }
 .about-details { position: static; display: flex; flex-direction: column; gap: 40px; margin-top: clamp(40px, 12vh, 90px); width: 100%; max-width: none; flex: 0 0 auto; }
@@ -206,7 +213,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 #contact::-webkit-scrollbar { display: none; }
 .media__contact { display: none; }
 body.is-contact .media__contact { display: block; right: 43vw; cursor: default; }
-.contact-panel { position: relative; z-index: 3; width: 43vw; min-height: 100%; margin-left: auto; padding: 16px 4vw 16px 48px; background: var(--white); display: flex; flex-direction: column; }
+.contact-panel { position: relative; z-index: 3; width: 43vw; min-height: 100%; margin-left: auto; padding: 16px 4vw 0 40px; background: var(--white); display: flex; flex-direction: column; }
 .contact-description { width: 100%; margin: 180px 0 0 95px; max-width: calc(100% - 95px); }
 .contact-heading { margin-top: 8px; margin-bottom: 8px; }
 .contact-intro { margin-bottom: 56px; color: var(--dark);}
@@ -254,6 +261,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 @media (max-width: 727px) {
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
+  .btn-primary { padding: 8px 16px 4px 16px; font-size: 16px; }
 }
 
 @media (max-width: 767px) {
@@ -270,7 +278,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   }
 
   body { overflow: hidden; }
-  .media { top: 4px; left: 4px; right: 4px; bottom: 20vh; border-radius: 4px; }
+  .media { top: 4px; left: 4px; right: 4px; bottom: 21vh; border-radius: 4px; }
   body.is-about .media {top: 4px;left: 4px; right: 4px; height: 52vh; border-radius: 4px; }
   .home-panel { background: transparent; top: auto; left: 10px; right: 10px; bottom: 0; width: auto; height: 28vh; padding: 0 0 20px; }
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
