@@ -589,28 +589,14 @@
       let aboutTimer;
 
       async function initAboutSlideshow() {
-        aboutSlides = await loadSlides(
-          ABOUT_FOLDER,
-          aboutSlideshow,
-          "Hudly studio"
-          );
-          
-        if (!aboutSlides.length) {
-          const fallbackImage = ABOUT_FOLDER + "hudlystudio.jpg";
+        const image = createSlide(
+          ABOUT_FOLDER + "hudlystudio.jpg",
+          "Hudly studio",
+          null
+        );
 
-          const slide = createSlide(
-            fallbackImage,
-            "Hudly studio",
-            null
-          );
-
-          slide.classList.add("on");
-          aboutSlideshow.appendChild(slide);
-          aboutSlides = [slide];
-        }
-
-        showAboutSlide(0);
-        updateSlideshow();
+        image.classList.add("on");
+        aboutSlideshow.replaceChildren(image);
       }
 
       function showAboutSlide(nextIndex) {
