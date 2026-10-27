@@ -357,3 +357,10 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
     transform: translateY(0);
   }
 }
+
+@media (max-width: 727px) {
+  .detail-row h3.detail-label {
+    font-family: "Helvetica Neue LT Pro", sans-serif !important;
+    font-weight: 500 !important;
+  }
+}
