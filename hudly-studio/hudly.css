@@ -216,7 +216,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 .about-logo { position: fixed; width: 48px; height: auto; flex: 0 0 auto; object-fit: contain; } 
 .about-description { position: relative; max-width: 100%; margin: 200px 0 0 95px; }
 .about-details { position: static; display: flex; flex-direction: column; gap: 40px; margin-top: clamp(40px, 12vh, 90px); width: 100%; max-width: none; flex: 0 0 auto; }
-.detail-row h3 { font-family: var(--font); font-weight: 500; }
+.detail-label h3 { font-family: var(--font); font-weight: 500; }
 .detail-row { display: grid; grid-template-columns: minmax(60px, 6vw) minmax(0, 1fr); column-gap: 16px; align-items: start; width: 100%; max-width: none; color: var(--dark); }
 .detail-row p { max-width: none; overflow-wrap: anywhere; }
 .detail-row a, .detail-row p { min-width: 0; }
