@@ -273,11 +273,11 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   }
 
   h1 { font-size: clamp(19px, 1.05vw, 22px); }
-  h3, .detail-label { font-weight: 500 !important; }
+  h3, .detail-label { font-weight: 600 !important; }
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
   .btn-primary { padding: 8px 16px; font-size: 16px; }
-  .btn-tertiary { padding: 4px 8px; margin-bottom: 0;}
+  .btn-tertiary { padding: 4px 8px; margin-bottom: 0; }
 
   body { overflow: hidden; }
   .media { top: 4px; left: 4px; right: 4px; bottom: 21.5vh; border-radius: 4px; }
