@@ -28,10 +28,10 @@ body {
 h1 {
   font-family: var(--font);
   font-weight: 400;
-  font-size: clamp(21px, 1.05vw, 24px); 
+  font-size: clamp(22px, 1.05vw, 24px); 
   line-height: 1.2; 
   letter-spacing: -0.2px;
-  color: var(--ink);
+  color: var(--muted);
 }
 h2 {
   font-family: var(--font);
@@ -176,7 +176,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 .home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 20.5vw; padding: 0; margin: 0; background: var(--white);}
 .about { position: absolute; left: 0; right: 1vw; bottom: 1.5vh; max-width: 28ch;}
 .about em { font-family: Georgia, serif; font-weight: 400; }
-.email { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 24px; color: var(--ink); }
+.email { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 24px; color: var(--dark); }
 .legacy-js { position: fixed; left: -10000px; top: 0; width: 1px; height: 1px; overflow: hidden; }
 
  
@@ -261,7 +261,8 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 @media (max-width: 727px) {
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
-  .btn-primary { padding: 8px 16px 4px 16px; font-size: 16px; }
+  .btn-primary { padding: 8px 16px; font-size: 16px; }
+  .btn-tertiary { padding: 4px 8px; }
 }
 
 @media (max-width: 767px) {
