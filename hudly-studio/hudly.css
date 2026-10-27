@@ -272,6 +272,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   }
 
   h1 { font-size: clamp(19px, 1.05vw, 22px); }
+  h3 { font-weight: 500 !important; }
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
   .btn-primary { padding: 8px 16px; font-size: 16px; }
@@ -291,6 +292,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   .about-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; } 
   .about-logo { position: fixed; width: 48px; top: 32px; }
   .about-description { position: relative; width: 100%; max-width: none; margin: 60px 0; padding: 0; top: 40px; left: 0px; right: 24px;  white-space: normal; padding-bottom: 16px; }
+  .detail-label { font-weight: 500 !important; }
   .about-details { position: static; width: 100%; margin-top: 40px; gap: 52px; }
   .detail-row { grid-template-columns: minmax(0, 1fr); row-gap: 8px; width: 100%; }
   .detail-row p { max-width: none; }
