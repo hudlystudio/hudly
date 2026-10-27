@@ -51,7 +51,7 @@ body {
 h1 {
   font-family: var(--font);
   font-weight: 400;
-  font-size: clamp(22px, 1.05vw, 24px); 
+  font-size: clamp(21px, 1.05vw, 24px); 
   line-height: 1.15; 
   letter-spacing: -0.25px;
   color: var(--dark);
@@ -74,7 +74,7 @@ h3 {
 p {
   font-family: var(--font);
   font-size: clamp(16px, 0.85vw, 17px); 
-  line-height: 1.25;
+  line-height: 1.28;
   color: inherit;
 }
 
