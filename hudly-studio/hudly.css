@@ -327,7 +327,8 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   .contact-panel::after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: -16px; background: var(--white); border-radius: 20px 20px 0 0; }   
   .contact-intro { position: relative; max-width: 100%; margin: 60px 0; top: 40px; bottom: 40px; left: 0px; right: 32px; }
   .contact-description { margin-bottom: 32px; }
-  .contact-form { gap: 24px; }
+  .contact-option span { padding: 10px 16px 4px 16px; }
+    .contact-form { gap: 24px; }
 }
 
 .intro__line { opacity: 0; animation: taglineFade 1s ease forwards; animation-delay: 0.5s; }
