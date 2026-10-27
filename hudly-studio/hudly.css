@@ -64,7 +64,7 @@ h2 {
 }
 h3 {
   font-family: var(--font);
-  font-weight: 500!important;
+  font-weight: 500;
   font-size: clamp(16px, 0.85vw, 17px); 
   line-height: 1.25;
   color: var(--dark);
@@ -295,7 +295,6 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   }
 
   h1 { font-size: clamp(19px, 1.05vw, 22px); }
-  h3, .detail-label { font-family: var(--font); font-weight: 500!important; }
   .top-nav { top: 20px; right: 16px; gap: 20px; }
   .nav-btn, .contact-nav { font-size: 18px; }
   .btn-primary { padding: 8px 16px; font-size: 16px; }
