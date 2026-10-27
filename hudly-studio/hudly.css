@@ -216,7 +216,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 .about-logo { position: fixed; width: 48px; height: auto; flex: 0 0 auto; object-fit: contain; } 
 .about-description { position: relative; max-width: 100%; margin: 200px 0 0 95px; }
 .about-details { position: static; display: flex; flex-direction: column; gap: 40px; margin-top: clamp(40px, 12vh, 90px); width: 100%; max-width: none; flex: 0 0 auto; }
-h3.detail-label { font-weight: 500!important; }
+h3.detail-label { font-family: "Helvetica Neue LT Pro", sans-serif !important; font-weight: 500 !important;}
 .detail-row { display: grid; grid-template-columns: minmax(60px, 6vw) minmax(0, 1fr); column-gap: 16px; align-items: start; width: 100%; max-width: none; color: var(--dark); }
 .detail-row p { max-width: none; overflow-wrap: anywhere; }
 .detail-row a, .detail-row p { min-width: 0; }
@@ -355,12 +355,5 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 727px) {
-  .detail-row h3.detail-label {
-    font-family: "Helvetica Neue LT Pro", sans-serif !important;
-    font-weight: 500 !important;
   }
 }
