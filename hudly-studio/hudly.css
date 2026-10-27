@@ -283,6 +283,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   body.is-about .media {top: 4px;left: 4px; right: 4px; height: 52vh; border-radius: 4px; }
   .home-panel { background: transparent; top: auto; left: 10px; right: 10px; bottom: 0; width: auto; height: 28vh; padding: 0 0 20px; }
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
+  .email { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 16px; }
   .nav-btn { top: 20px; right: 16px; font-size: 18px; }
 
   body.is-about .nav-btn { top: 22px; }
