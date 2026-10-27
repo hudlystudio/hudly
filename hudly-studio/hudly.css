@@ -258,13 +258,6 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 
 
 /* Responsive layout */
-@media (max-width: 727px) {
-  .top-nav { top: 20px; right: 16px; gap: 20px; }
-  .nav-btn, .contact-nav { font-size: 18px; }
-  .btn-primary { padding: 8px 16px; font-size: 16px; }
-  .btn-tertiary { padding: 4px 8px; }
-}
-
 @media (max-width: 767px) {
   .intro { display: none !important; }
 }
@@ -278,12 +271,17 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
     -webkit-overflow-scrolling: touch;
   }
 
+  h1 { font-size: clamp(19px, 1.05vw, 22px); }
+  .top-nav { top: 20px; right: 16px; gap: 20px; }
+  .nav-btn, .contact-nav { font-size: 18px; }
+  .btn-primary { padding: 8px 16px; font-size: 16px; }
+  .btn-tertiary { padding: 4px 8px; }
+
   body { overflow: hidden; }
   .media { top: 4px; left: 4px; right: 4px; bottom: 21.5vh; border-radius: 4px; }
   body.is-about .media {top: 4px;left: 4px; right: 4px; height: 52vh; border-radius: 4px; }
   .home-panel { background: transparent; top: auto; left: 10px; right: 10px; bottom: 0; width: auto; height: 28vh; padding: 0 0 20px; }
   .about { max-width: 50ch; left: 0; right: 8px; bottom: 20px; }
-  .email-copy { margin-top: 10px; }
   .nav-btn { top: 20px; right: 16px; font-size: 18px; }
 
   body.is-about .nav-btn { top: 22px; }
