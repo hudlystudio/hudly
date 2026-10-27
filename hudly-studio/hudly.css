@@ -257,7 +257,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 .contact-selection { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; border: none;}
 .contact-option { position: relative; cursor: pointer; }
 .contact-option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
-.contact-option span { display: block; padding: 9px 16px 6px 16px; border: 0.5px solid var(--dark); border-radius: 32px; color: var(--dark); font-size: 14px;
+.contact-option span { display: block; padding: 10px 16px 6px 16px; border: 0.5px solid var(--dark); border-radius: 32px; color: var(--dark); font-size: 14px;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
 .contact-option span:hover { background: var(--soft); border: 0.5px solid var(--soft); color: var(--ink); }
 .contact-option input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--white); }
