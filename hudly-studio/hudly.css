@@ -42,7 +42,7 @@ h2 {
 }
 h3 {
   font-family: var(--font);
-  font-weight: 500; 
+  font-weight: 500!important;
   font-size: clamp(16px, 0.85vw, 16px); 
   line-height: 1.25;
   color: var(--dark);
@@ -296,6 +296,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
   .about-details { position: static; width: 100%; margin-top: 40px; gap: 52px; }
   .detail-row { grid-template-columns: minmax(0, 1fr); row-gap: 8px; width: 100%; }
   .detail-row p { max-width: none; }
+  .detail-row--inquiries { row-gap: 20px; }
 
   body.is-contact .media { right: 4px; height: 52vh; }
   .contact-panel { position: relative; isolation: isolate; background-color: var(--white); min-height: 46vh; width: 100%; margin: 54vh 0 0 0; padding: 24px; border-radius: 20px 20px 0 0;
