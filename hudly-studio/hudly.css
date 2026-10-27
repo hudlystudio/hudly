@@ -51,7 +51,7 @@ body {
 h1 {
   font-family: var(--font);
   font-weight: 400;
-  font-size: clamp(21px, 1.05vw, 24px); 
+  font-size: clamp(21px, 1.05vw, 23px); 
   line-height: 1.15; 
   letter-spacing: -0.25px;
   color: var(--dark);
