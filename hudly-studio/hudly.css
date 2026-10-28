@@ -271,9 +271,8 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 .contact-submit:disabled { opacity: 0.35 !important; cursor: not-allowed !important; pointer-events: none; }
 .contact-submit:not(:disabled) { opacity: 1; cursor: pointer; }
 
-
-.contact-success { color: var(--ink); font: inherit; animation: contactFadeIn 0.5s ease both; }
-.contact-success p + p { margin-top: 12px; color: var(--muted); }
+.contact-success { margin-top: 80px; color: var(--ink); font: inherit; animation: contactFadeIn 0.5s ease both; }
+.contact-success p + p { color: var(--ink); }
 
 
 

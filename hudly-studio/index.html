@@ -767,29 +767,28 @@
       }
     });
 
-    /* Contact form: required-field button state */
-    function initContactValidation() {
-      const form = document.querySelector("#contactForm");
-      if (!form) return;
+      /* Contact form: required-field button state */
+      (() => {
+        const form = document.querySelector("#contactForm");
+        if (!form) return;
 
-      const button = form.querySelector(".contact-submit");
-      if (!button) return;
+        const button = form.querySelector(".contact-submit");
+        if (!button) return;
 
-      const updateButtonState = () => {
-        button.disabled = !form.checkValidity();
-      };
+        const updateButtonState = () => {
+          button.disabled = !form.checkValidity();
+        };
 
-      form.addEventListener("input", updateButtonState);
-      form.addEventListener("change", updateButtonState);
+        // Set the initial state immediately.
+        updateButtonState();
 
-      updateButtonState();
-    }
+        // Update whenever the user edits a field.
+        form.addEventListener("input", updateButtonState);
+        form.addEventListener("change", updateButtonState);
 
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initContactValidation);
-    } else {
-      initContactValidation();
-    }
+        // Recheck when the page is restored from browser history.
+        window.addEventListener("pageshow", updateButtonState);
+      })();
   </script>
 
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
