@@ -190,6 +190,7 @@
             autocomplete="email"
             required
           >
+          <p class="contact-error" id="emailError" aria-live="polite"></p>
         </div>
 
         <fieldset class="contact-field">
@@ -767,28 +768,80 @@
       }
     });
 
-      /* Contact form: required-field button state */
-      (() => {
-        const form = document.querySelector("#contactForm");
-        if (!form) return;
+    
+    /* Contact form: required-field button state */
+    (() => {
+      const form = document.querySelector("#contactForm");
+      if (!form) return;
 
-        const button = form.querySelector(".contact-submit");
-        if (!button) return;
+      const button = form.querySelector(".contact-submit");
+      const emailInput = form.querySelector("#contactEmail");
+      const emailError = form.querySelector("#emailError");
 
-        const updateButtonState = () => {
-          button.disabled = !form.checkValidity();
-        };
+      if (!button || !emailInput || !emailError) return;
 
-        // Set the initial state immediately.
+      let emailTouched = false;
+      let submitAttempted = false;
+
+      const isEmailComplete = () => {
+        const email = emailInput.value.trim();
+
+        // Require text before and after @, a dot in the domain,
+        // and at least two characters after the final dot.
+        return /^[^\s@]+@[^\s@.]+(?:\.[^\s@.]+)+$/.test(email) &&
+          /\.[^\s@.]{2,}$/.test(email);
+      };
+
+      const updateButtonState = () => {
+        const emailValid = isEmailComplete();
+
+        // Keep the button disabled until all required fields are valid.
+        button.disabled = !form.checkValidity() || !emailValid;
+
+        const shouldShowError =
+          emailInput.value.trim() !== "" &&
+          !emailValid &&
+          (emailTouched || submitAttempted);
+
+        emailInput.setAttribute(
+          "aria-invalid",
+          shouldShowError ? "true" : "false"
+        );
+
+        emailError.textContent = shouldShowError
+          ? "Please enter a complete, valid email address."
+          : "";
+      };
+
+      emailInput.addEventListener("blur", () => {
+        emailTouched = true;
+        updateButtonState();
+      });
+
+      form.addEventListener("input", updateButtonState);
+      form.addEventListener("change", updateButtonState);
+
+      form.addEventListener("submit", (event) => {
+        submitAttempted = true;
         updateButtonState();
 
-        // Update whenever the user edits a field.
-        form.addEventListener("input", updateButtonState);
-        form.addEventListener("change", updateButtonState);
+        if (!form.checkValidity() || !isEmailComplete()) {
+          event.preventDefault();
 
-        // Recheck when the page is restored from browser history.
-        window.addEventListener("pageshow", updateButtonState);
-      })();
+          if (!isEmailComplete()) {
+            emailTouched = true;
+            updateButtonState();
+            emailInput.focus();
+          }
+
+          form.reportValidity();
+        }
+      });
+
+      window.addEventListener("pageshow", updateButtonState);
+
+      updateButtonState();
+    })();
   </script>
 
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
