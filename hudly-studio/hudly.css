@@ -130,7 +130,7 @@ button { color: inherit; border: 0; background: none; font: inherit; }
   transition: all 0.3s ease; 
   cursor: default;
 }
-.btn-primary:hover { background: var(--pink); border: 1px solid var(--dark); color: var(--white); }
+.btn-primary:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
 
 .btn-tertiary { 
   background: none; 
