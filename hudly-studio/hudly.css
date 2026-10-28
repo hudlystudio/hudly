@@ -268,8 +268,47 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
 .contact-submit:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
 .contact-status { color: var(--muted); }
 
+.contact-submit:disabled { opacity: 0.35 !important; cursor: not-allowed !important; pointer-events: none; }
+.contact-submit:not(:disabled) { opacity: 1; cursor: pointer; }
+
+
 .contact-success { color: var(--ink); font: inherit; animation: contactFadeIn 0.5s ease both; }
 .contact-success p + p { margin-top: 12px; color: var(--muted); }
+
+
+
+/* Formspree error notification */
+[data-fs-error][data-fs-active] {
+  display: block;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border: 1px solid var(--pink);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--pink);
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  box-shadow: none;
+}
+
+/* Field-level validation errors */
+[data-fs-error]:not([data-fs-error=""])[data-fs-active] {
+  padding: 0;
+  margin-top: 6px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--pink);
+  font-size: 12px;
+}
+
+/* Invalid fields */
+[data-fs-field][aria-invalid="true"] {
+  border-color: var(--pink);
+}
+
 
 
 /* Navigation: close on About */

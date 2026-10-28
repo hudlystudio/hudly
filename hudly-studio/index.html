@@ -244,7 +244,7 @@
           ></textarea>
         </div>
 
-        <button class="contact-submit" type="submit">
+        <button class="contact-submit" type="submit" data-fs-submit-btn disabled>
           Send <span aria-hidden="true"></span>
         </button>
 
@@ -766,6 +766,30 @@
         form.replaceWith(message);
       }
     });
+
+    /* Contact form: required-field button state */
+    function initContactValidation() {
+      const form = document.querySelector("#contactForm");
+      if (!form) return;
+
+      const button = form.querySelector(".contact-submit");
+      if (!button) return;
+
+      const updateButtonState = () => {
+        button.disabled = !form.checkValidity();
+      };
+
+      form.addEventListener("input", updateButtonState);
+      form.addEventListener("change", updateButtonState);
+
+      updateButtonState();
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initContactValidation);
+    } else {
+      initContactValidation();
+    }
   </script>
 
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
