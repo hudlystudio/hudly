@@ -267,7 +267,7 @@ body.is-contact .media__contact { display: block; right: 43vw; cursor: default; 
    transition: background 0.3s ease, color 0.3s ease;}
 .contact-submit:hover { background: var(--pink); border: 1px solid var(--pink); color: var(--white); }
 .contact-status { color: var(--muted); }
-.contact-error { margin: 6px 0 0; color: var(--pink); font-size: 12px; line-height: 1.4; }
+.contact-error { font-family: var(--font); font-size: 12px; line-height: 1.4; margin: 6px 0 0; color: var(--pink); }
 .contact-error:empty { display: none; }
 .contact-field input[aria-invalid="true"] { border-bottom-color: var(--pink); }
 
