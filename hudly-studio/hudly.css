@@ -174,7 +174,7 @@ img, video { display: block; max-width: 100%; }
 
 /* Shared image panel: expands and shifts when toggling between Home and About. */
 .media {
-  position: fixed; z-index: 1; top: 4px; left: 4px; bottom: 4px; right: 22vw; overflow: hidden; border-radius: 6px; background: var(--white); cursor: pointer;
+  position: fixed; z-index: 1; top: 4px; left: 4px; bottom: 4px; right: 23vw; overflow: hidden; border-radius: 6px; background: var(--white); cursor: pointer;
     transition:
     top .95s var(--ease),
     right .95s var(--ease),
