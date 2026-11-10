@@ -174,14 +174,14 @@ img, video { display: block; max-width: 100%; }
 
 /* Shared image panel: expands and shifts when toggling between Home and About. */
 .media {
-  position: fixed; z-index: 1; top: 4px; left: 4px; bottom: 4px; right: 23vw; overflow: hidden; border-radius: 6px; background: var(--white); cursor: pointer;
+  position: fixed; z-index: 1; top: 4px; left: 4px; bottom: 4px; right: 21.5vw; overflow: hidden; border-radius: 6px; background: var(--white); cursor: pointer;
     transition:
     top .95s var(--ease),
     right .95s var(--ease),
     bottom .95s var(--ease),
     left .95s var(--ease);
 }
-body.is-about .media, body.is-contact .media { top: 4px; left: 4px; bottom: 4px; right: 43vw; border-radius: 6px; cursor: default;}
+body.is-about .media, body.is-contact .media { top: 4px; left: 4px; bottom: 4px; right: 42.5vw; border-radius: 6px; cursor: default;}
 .media__about { position: absolute; inset: 0; opacity: 0; background: var(--soft); transition: opacity .18s ease-out; }
 .media__about img, .media__about video { width: 100%; height: 100%; object-fit: contain; }
 body.is-about .media__about { opacity: 1; }
@@ -197,8 +197,8 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
 
 /* Home */
 #home { background: transparent; }
-.home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 21vw; padding: 0; margin: 0; background: var(--white);}
-.about { position: absolute; left: 0; right: 1vw; bottom: 1.5vh; max-width: 28ch;}
+.home-panel { position: absolute; z-index: 3; top: 0; right: 0; bottom: 0; width: 20vw; padding: 0; margin: 0; background: var(--white);}
+.about { position: absolute; left: 0; right: 1vw; bottom: 1.5vh; max-width: 29ch;}
 .about em { font-family: Georgia, serif; font-weight: 400; }
 .email { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 24px; color: var(--dark); }
 .legacy-js { position: fixed; left: -10000px; top: 0; width: 1px; height: 1px; overflow: hidden; }
