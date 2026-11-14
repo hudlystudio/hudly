@@ -214,7 +214,7 @@ body.is-about .contact-nav, body.is-contact .contact-nav { display: none; }
   margin-bottom: 0;
 }
 #about::-webkit-scrollbar {display: none;}
-.about-panel { position: relative; z-index: 3; background-color: var(--white); width: 43vw; height: auto; min-height: 100vh; padding: 16px 4vw 0 40px; top: 0; right: 0; bottom: 0; margin-left: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+.about-panel { position: relative; z-index: 3; background-color: var(--white); width: 42.5vw; height: auto; min-height: 100vh; padding: 16px 4vw 0 40px; top: 0; right: 0; bottom: 0; margin-left: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
 .about-logo { position: fixed; width: 48px; height: auto; flex: 0 0 auto; object-fit: contain; } 
 .about-description { position: relative; max-width: 100%; margin: 200px 0 0 95px; }
 .about-details { position: static; display: flex; flex-direction: column; gap: 40px; margin-top: clamp(40px, 12vh, 90px); width: 100%; max-width: none; flex: 0 0 auto; }
@@ -237,8 +237,8 @@ h3.detail-label { font-family: "Helvetica Neue LT Pro", sans-serif !important; f
 }
 #contact::-webkit-scrollbar { display: none; }
 .media__contact { display: none; }
-body.is-contact .media__contact { display: block; right: 43vw; cursor: default; }
-.contact-panel { position: relative; z-index: 3; width: 43vw; min-height: 100%; margin-left: auto; padding: 16px 4vw 0 40px; background: var(--white); display: flex; flex-direction: column; }
+body.is-contact .media__contact { display: block; cursor: default; }
+.contact-panel { position: relative; z-index: 3; width: 42.5vw; min-height: 100%; margin-left: auto; padding: 16px 4vw 0 40px; background: var(--white); display: flex; flex-direction: column; }
 .contact-intro { width: 100%; margin: 180px 0 0 95px; max-width: calc(100% - 95px); }
 .contact-heading { margin-top: 8px; margin-bottom: 8px; }
 .contact-description { color: var(--dark); }
